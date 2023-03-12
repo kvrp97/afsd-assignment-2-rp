@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item px-4">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="index.html">Add Student</a>
+          </li>
+          <li class="nav-item px-5">
+            <a class="nav-link" href="load-data.html">Load All</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container col-lg-6 col-md-8 col-sm-10 mt-5">
+    <div class="card text-center">
+      <div class="card-header">
+        <h3>Add Student</h3>
+      </div>
+      <div class="card-body">
+        <div class="mb-4">
+          <input class="form-control text-center" type="text" name="id" id="id" placeholder="Enter ID" required>
+        </div>
+        <div class="mb-4">
+          <input class="form-control text-center" type="text" name="name" id="name" placeholder="Enter Name" required>
+        </div>
+        <div class="mb-4">
+          <input class="form-control text-center" type="text" name="address" id="address" placeholder="Enter Address"
+            required>
+        </div>
+        <div class="mb-4">
+          <input class="form-control text-center" type="number" name="salary" id="salary" placeholder="Salary / Rs."
+            required>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="row p-0 m-0">
+          <div class="col p-0 m-0">
+            <div id="message">
+
+            </div>
+          </div>
+          <div class="col p-0 m-0 text-end">
+            <button onclick="saveData()" class="btn btn-outline-primary m-1" type="submit">Save Student</button>
+            <button onclick="clearFields()" class="btn btn-outline-secondary m-1" type="reset">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

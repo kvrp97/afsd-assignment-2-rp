@@ -1,0 +1,41 @@
+body {
+    background-image: url("/img/bg-image.jpg");
+    background-repeat: space;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-link { 
+    font-size: larger; 
+    font-weight: 600;
+    color: white !important;
+}
+
+.card{
+    border-radius: 0 30px;
+}
+
+button{
+    border: 2px solid !important;
+    border-radius: 0 10px !important;
+}
+
+.card-header h3 {
+    color: rgb(0, 94, 157);
+}
+
+.nav-link:hover{    
+    color: rgb(0, 56, 94) !important;
+}
+
+#allData{
+    color: rgb(0, 0, 0);
+    background-color: rgb(155, 163, 171);
+}
+
+#table-container{
+    padding: 2rem !important;
+    background-color: rgb(127, 150, 159);
+    border-radius: 25px;
+
+}
