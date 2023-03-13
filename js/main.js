@@ -97,8 +97,9 @@ function loadAllData() {
         })
         .catch(err => {
             console.log(err.message)
-            $("#message").html("<div class='alert alert-dark m-0 p-2 w-50 text-center opacity-75 text-danger' role='alert'>"+
-            "An Error occurred when loading data"+
-          "</div>")
+            $("#message").removeAttr("hidden")
+            $("#message").html("<div class='alert alert-dark m-0 p-2 w-50 text-center opacity-75 text-danger' role='alert'>" +
+                "An Error occurred when loading data" +
+                "</div>")
         })
 }
