@@ -37,7 +37,7 @@ function saveData() {
             .catch(err => {
                 // console.log(err)
                 $("#message").html("<div class='alert alert-danger col p-1 m-0' role='alert'>"
-                    + err.message + "</div>")
+                    + "An error occurred" + "</div>")
             })
             .finally(clearFields())
     }
