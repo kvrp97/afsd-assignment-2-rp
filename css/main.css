@@ -1,8 +1,15 @@
 body {
     background-image: url("/img/bg-image.jpg");
-    background-repeat: space;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;    
     height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-repeat: repeat-y;
+    }
 }
 
 .nav-link { 
@@ -30,12 +37,13 @@ button{
 
 #allData{
     color: rgb(0, 0, 0);
-    background-color: rgb(155, 163, 171);
+    background-color: rgb(179, 186, 192);
+    display: block;
+    overflow: auto;
 }
 
 #table-container{
     padding: 2rem !important;
     background-color: rgb(127, 150, 159);
     border-radius: 25px;
-
 }
