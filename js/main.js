@@ -35,7 +35,7 @@ function saveData() {
             })
             // .then(data => console.log(data))
             .catch(err => {
-                // console.log(err)
+                console.log(err.message)
                 $("#message").html("<div class='alert alert-danger col p-1 m-0' role='alert'>"
                     + "An error occurred" + "</div>")
             })
