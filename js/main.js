@@ -11,7 +11,7 @@ function saveData() {
         var s_address = $("#address").val();
         var s_salary = $("#salary").val();
 
-        fetch('http://localhost:8080/student/save', {
+        fetch('http://localhost:8080/student', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -34,7 +34,11 @@ function saveData() {
                 // return res.json()        
             })
             // .then(data => console.log(data))
-            .catch(err => console.log(err))
+            .catch(err => {
+                // console.log(err)
+                $("#message").html("<div class='alert alert-danger col p-1 m-0' role='alert'>"
+                    + err.message + "</div>")
+            })
             .finally(clearFields())
     }
 }
@@ -75,7 +79,7 @@ function clearFields() {
 
 // load all data to table
 function loadAllData() {
-    fetch('http://localhost:8080/student/students', {
+    fetch('http://localhost:8080/student/', {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' }
     })
